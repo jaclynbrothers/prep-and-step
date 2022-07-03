@@ -1,0 +1,64 @@
+/* Box Model Hack */
+*{
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+/* Layout */
+@-ms-viewport {
+    width: device-width;
+}
+
+@media only screen and (min-width: 869px) and (max-width: 1920px) {
+    .pictures {
+        width: 250px;
+        height: 250px;
+    }
+}
+
+/* Styling */
+#main-container {
+    display: flex;
+}
+
+#schedule-container {
+    border: 3px solid red;
+    width: 30vw;
+}
+
+.image-container {
+    text-align: center;
+    border: 3px solid blue;  
+}
+
+#activity {
+    width: 70%;
+}
+
+.pictures {
+    border: 2px solid black;
+    width: 45%;
+    height: 45%;
+    object-fit: cover;
+}
+
+.images-appear-here {
+    border: 3px solid orange;
+    /* width: 70vw; */
+    flex: 1;
+}
+
+.displayedPictures {
+    width: 20%;
+}
+
+.hidden{
+	display: none;
+}
+
+.footer {
+    border: 2px solid green;
+    min-height: 20vh;
+    margin-top: auto;
+}
