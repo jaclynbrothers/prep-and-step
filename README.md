@@ -1,5 +1,5 @@
 # Prep and Step Prototype
-The plan is for the user to select images and create a visual schedule of their student's or child's daily routine. 
+This application allows the user to select and name images to create a visual schedule of their student's or child's daily routine. 
 
 **Link to project:** https://jaclynbrothers.github.io/prep-and-step/
 
@@ -18,7 +18,11 @@ I learned more about Flexbox to arrange my layout.
 
 ## Credits
 
-<a href="https://www.opensymbols.org/" alt="Link to opensymbols.org">Open Symbols</a>
+Modified <a target="_blank" href="https://freeicons.io/mobile-user-interface/calendar-date-time-day-schedule-icon-452907#" alt="Link to Schedule Icon by Hilmy Abiyyu Asad">Schedule</a> icon by <a target="_blank" href="https://freeicons.io/profile/75801">Hilmy Abiyyu Asad</a>
+<br>
+Modified <a target="_blank" href="https://icons8.com/icon/916/running" alt="Link to Running Icon by Icons8">Running</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>
+<br>
+Picture Symbols from <a href="https://www.opensymbols.org/" alt="Link to opensymbols.org">Open Symbols</a>
 
 ## Other Projects
 
