@@ -18,22 +18,62 @@
 }
 
 /* Styling */
+
+body {
+    background-color: #02bfe7;
+}
+
 #main-container {
     display: flex;
 }
 
+.welcomeSection {
+    /* border: 2px solid green; */
+    min-height: 5vh;
+    padding: 1% 0 1% 0;
+    text-align: center;
+    margin-top: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2em;
+    font-weight: bold;
+}
+
+.stepAndPrepLogo {
+    width: 10%;
+    border-radius: 100%;
+    border: 4px solid black;
+}
+
 #schedule-container {
-    border: 3px solid red;
+    border: 3px solid blue;
+    border-radius: 10px;
     width: 30vw;
 }
 
 .image-container {
     text-align: center;
-    border: 3px solid blue;  
+    /* border: 3px solid blue; */
+    margin: 2%;
 }
 
+/* -- Text Boxes -- */
+
 #activity {
-    width: 70%;
+    width: 55%;
+}
+
+input[type=text] {
+    padding: 5px;
+    border: 2px solid black;
+    border-radius: 4px;
+    font-size: 1em;
+    font-weight: bold;
+}
+
+.fontStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+    font-weight: bold;
 }
 
 .pictures {
@@ -41,16 +81,22 @@
     width: 45%;
     height: 45%;
     object-fit: cover;
+    background-color: #FFFFFF;
 }
 
 .images-appear-here {
-    border: 3px solid orange;
+    border: 3px solid purple;
+    border-radius: 10px;
+    padding-top: 1%;
+    text-align: center;
     /* width: 70vw; */
     flex: 1;
 }
 
 .displayedPictures {
-    width: 20%;
+    width: 19%;
+    border: 2px solid black;
+    background-color: #FFFFFF;
 }
 
 .hidden{
@@ -58,7 +104,18 @@
 }
 
 .footer {
-    border: 2px solid green;
-    min-height: 20vh;
+    /* border: 2px solid green; */
+    min-height: 5vh;
+    padding: 1% 0 1% 0;
+    text-align: center;
     margin-top: auto;
 }
+
+.footerFontStyle {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 1em;
+}
+
+/* footer span a {
+    text-decoration: none;
+} */

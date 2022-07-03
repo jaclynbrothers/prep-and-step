@@ -1,43 +1,267 @@
-// click on placeholder image to make all images appear
-const images = document.querySelectorAll('.pickImage')
+// click on 1st placeholder image to make all images appear
+const imagesRowOne = document.querySelectorAll('.pickImageRowOne')
 
-Array.from(images).forEach(element => element.addEventListener('click', pickImage))
+Array.from(imagesRowOne).forEach(element => element.addEventListener('click', pickImageRowOne))
 
-function pickImage(click){
-	if(click.target.classList.contains('pickImage')){
- document.querySelectorAll('.showImage').forEach(x=>x.classList.toggle('hidden'))
+function pickImageRowOne(click){
+	if(click.target.classList.contains('pickImageRowOne')){
+    document.querySelectorAll('.showImageRowOne').forEach(x=>x.classList.toggle('hidden'))
     }else{
         alert("Error: please refresh and try again.");
     }
 }
 
+// click on 2nd placeholder image to make all images appear
+const imagesRowTwo = document.querySelectorAll('.pickImageRowTwo')
+
+Array.from(imagesRowTwo).forEach(element => element.addEventListener('click', pickImageRowTwo))
+
+function pickImageRowTwo(click){
+	if(click.target.classList.contains('pickImageRowTwo')){
+    document.querySelectorAll('.showImageRowTwo').forEach(x=>x.classList.toggle('hidden'))
+    }else{
+        alert("Error: please refresh and try again.");
+    }
+}
+
+// click on 3rd placeholder image to make all images appear
+const imagesRowThree = document.querySelectorAll('.pickImageRowThree')
+
+Array.from(imagesRowThree).forEach(element => element.addEventListener('click', pickImageRowThree))
+
+function pickImageRowThree(click){
+	if(click.target.classList.contains('pickImageRowThree')){
+    document.querySelectorAll('.showImageRowThree').forEach(x=>x.classList.toggle('hidden'))
+    }else{
+        alert("Error: please refresh and try again.");
+    }
+}
+
+// click on 4th placeholder image to make all images appear
+const imagesRowFour = document.querySelectorAll('.pickImageRowFour')
+
+Array.from(imagesRowFour).forEach(element => element.addEventListener('click', pickImageRowFour))
+
+function pickImageRowFour(click){
+	if(click.target.classList.contains('pickImageRowFour')){
+    document.querySelectorAll('.showImageRowFour').forEach(x=>x.classList.toggle('hidden'))
+    }else{
+        alert("Error: please refresh and try again.");
+    }
+}
+
+// click on 5th placeholder image to make all images appear
+const imagesRowFive = document.querySelectorAll('.pickImageRowFive')
+
+Array.from(imagesRowFive).forEach(element => element.addEventListener('click', pickImageRowFive))
+
+function pickImageRowFive(click){
+	if(click.target.classList.contains('pickImageRowFive')){
+    document.querySelectorAll('.showImageRowFive').forEach(x=>x.classList.toggle('hidden'))
+    }else{
+        alert("Error: please refresh and try again.");
+    }
+}
+
+// --- BREAKFAST PICTURE --
+
 // click on breakfast to replace the 1st placeholder image that was clicked with that picture and hide the other pictures
-const replaceImagewithBreakfast = document.querySelectorAll('.breakfast')
+const replaceImagewithBreakfastRowOne = document.querySelectorAll('.breakfastRowOne')
 
-Array.from(replaceImagewithBreakfast).forEach(element => element.addEventListener('click', switchWithBreakfast))
+Array.from(replaceImagewithBreakfastRowOne).forEach(element => element.addEventListener('click', switchWithBreakfastRowOne))
 
-function switchWithBreakfast(click){
+function switchWithBreakfastRowOne(click){
             let Image_Id = document.getElementById('getImage1');
             if (Image_Id.src.match("images/placeholder-image1.png")) {
                 Image_Id.src = "images/breakfast.png.variant-medium.png";
-              document.querySelectorAll('.showImage').forEach(x=>x.classList.toggle('hidden'));
+                document.querySelectorAll('.showImageRowOne').forEach(x=>x.classList.toggle('hidden'));
             }
             else {
                 Image_Id.src = "images/placeholder-image1.png";
             }
         }
 
-// click on reading to replace the 2nd placeholder image that was clicked with that picture and hide the other pictures
+// click on breakfast to replace the 2nd placeholder image that was clicked with that picture and hide the other pictures
+const replaceImagewithBreakfastRowTwo = document.querySelectorAll('.breakfastRowTwo')
 
-const replaceImageWithReading = document.querySelectorAll('.reading')
+Array.from(replaceImagewithBreakfastRowTwo).forEach(element => element.addEventListener('click', switchWithBreakfastRowTwo))
 
-        Array.from(replaceImageWithReading).forEach(element => element.addEventListener('click', switchWithReading))
-
-        function switchWithReading(click){
+function switchWithBreakfastRowTwo(click){
             let Image_Id = document.getElementById('getImage2');
             if (Image_Id.src.match("images/placeholder-image2.png")) {
-                Image_Id.src = "images/reading.png.variant-medium.png";
-              document.querySelectorAll('.showImage').forEach(x=>x.classList.toggle('hidden'));
+                Image_Id.src = "images/breakfast.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowTwo').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image2.png";
+            }
+        }
+
+// click on breakfast to replace the 3rd placeholder image that was clicked with that picture and hide the other pictures
+const replaceImagewithBreakfastRowThree = document.querySelectorAll('.breakfastRowThree')
+
+Array.from(replaceImagewithBreakfastRowThree).forEach(element => element.addEventListener('click', switchWithBreakfastRowThree))
+
+function switchWithBreakfastRowThree(click){
+            let Image_Id = document.getElementById('getImage3');
+            if (Image_Id.src.match("images/placeholder-image3.png")) {
+                Image_Id.src = "images/breakfast.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowThree').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image3.png";
+            }
+        }
+
+// click on breakfast to replace the 4th placeholder image that was clicked with that picture and hide the other pictures
+const replaceImagewithBreakfastRowFour = document.querySelectorAll('.breakfastRowFour')
+
+Array.from(replaceImagewithBreakfastRowFour).forEach(element => element.addEventListener('click', switchWithBreakfastRowFour))
+
+function switchWithBreakfastRowFour(click){
+            let Image_Id = document.getElementById('getImage4');
+            if (Image_Id.src.match("images/placeholder-image4.png")) {
+                Image_Id.src = "images/breakfast.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowFour').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image4.png";
+            }
+        }
+
+// click on breakfast to replace the 5th placeholder image that was clicked with that picture and hide the other pictures
+const replaceImagewithBreakfastRowFive= document.querySelectorAll('.breakfastRowFive')
+
+Array.from(replaceImagewithBreakfastRowFive).forEach(element => element.addEventListener('click', switchWithBreakfastRowFive))
+
+function switchWithBreakfastRowFive(click){
+            let Image_Id = document.getElementById('getImage5');
+            if (Image_Id.src.match("images/placeholder-image5.png")) {
+                Image_Id.src = "images/breakfast.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowFive').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image5.png";
+            }
+        }
+
+// --- READING PICTURE --
+
+// click on reading to replace the 1st placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithReadingRowOne = document.querySelectorAll('.readingRowOne')
+
+Array.from(replaceImageWithReadingRowOne).forEach(element => element.addEventListener('click', switchWithReadingRowOne))
+
+function switchWithReadingRowOne(click){
+    let Image_Id = document.getElementById('getImage1');
+    if (Image_Id.src.match("images/placeholder-image1.png")) {
+        Image_Id.src = "images/reading.png.variant-medium.png";
+        document.querySelectorAll('.showImageRowOne').forEach(x=>x.classList.toggle('hidden'));
+    }
+    else {
+        Image_Id.src = "images/placeholder-image1.png";
+    }
+}
+
+// click on reading to replace the 2nd placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithReadingRowTwo = document.querySelectorAll('.readingRowTwo')
+
+Array.from(replaceImageWithReadingRowTwo).forEach(element => element.addEventListener('click', switchWithReadingRowTwo))
+
+function switchWithReadingRowTwo(click){
+    let Image_Id = document.getElementById('getImage2');
+    if (Image_Id.src.match("images/placeholder-image2.png")) {
+        Image_Id.src = "images/reading.png.variant-medium.png";
+        document.querySelectorAll('.showImageRowTwo').forEach(x=>x.classList.toggle('hidden'));
+    }
+    else {
+        Image_Id.src = "images/placeholder-image2.png";
+    }
+}
+
+// click on reading to replace the 3rd placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithReadingRowThree = document.querySelectorAll('.readingRowThree')
+
+Array.from(replaceImageWithReadingRowThree).forEach(element => element.addEventListener('click', switchWithReadingRowThree))
+
+function switchWithReadingRowThree(click){
+    let Image_Id = document.getElementById('getImage3');
+    if (Image_Id.src.match("images/placeholder-image3.png")) {
+        Image_Id.src = "images/reading.png.variant-medium.png";
+        document.querySelectorAll('.showImageRowThree').forEach(x=>x.classList.toggle('hidden'));
+    }
+    else {
+        Image_Id.src = "images/placeholder-image3.png";
+    }
+}
+
+// click on reading to replace the 4th placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithReadingRowFour = document.querySelectorAll('.readingRowFour')
+
+Array.from(replaceImageWithReadingRowFour).forEach(element => element.addEventListener('click', switchWithReadingRowFour))
+
+function switchWithReadingRowFour(click){
+    let Image_Id = document.getElementById('getImage4');
+    if (Image_Id.src.match("images/placeholder-image4.png")) {
+        Image_Id.src = "images/reading.png.variant-medium.png";
+        document.querySelectorAll('.showImageRowFour').forEach(x=>x.classList.toggle('hidden'));
+    }
+    else {
+        Image_Id.src = "images/placeholder-image4.png";
+    }
+}
+
+// click on reading to replace the 5th placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithReadingRowFive = document.querySelectorAll('.readingRowFive')
+
+Array.from(replaceImageWithReadingRowFive).forEach(element => element.addEventListener('click', switchWithReadingRowFive))
+
+function switchWithReadingRowFive(click){
+    let Image_Id = document.getElementById('getImage5');
+    if (Image_Id.src.match("images/placeholder-image5.png")) {
+        Image_Id.src = "images/reading.png.variant-medium.png";
+        document.querySelectorAll('.showImageRowFive').forEach(x=>x.classList.toggle('hidden'));
+    }
+    else {
+        Image_Id.src = "images/placeholder-image5.png";
+    }
+}
+
+// --- PARK PICTURE --
+
+// click on park to replace the 1st placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithParkRowOne = document.querySelectorAll('.parkRowOne')
+
+        Array.from(replaceImageWithParkRowOne).forEach(element => element.addEventListener('click', switchWithParkRowOne))
+
+        function switchWithParkRowOne(click){
+            let Image_Id = document.getElementById('getImage1');
+            if (Image_Id.src.match("images/placeholder-image1.png")) {
+                Image_Id.src = "images/park.png";
+                document.querySelectorAll('.showImageRowOne').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image1.png";
+            }
+        }
+
+// click on park to replace the 2nd placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithParkRowTwo = document.querySelectorAll('.parkRowTwo')
+
+        Array.from(replaceImageWithParkRowTwo).forEach(element => element.addEventListener('click', switchWithParkRowTwo))
+
+        function switchWithParkRowTwo(click){
+            let Image_Id = document.getElementById('getImage2');
+            if (Image_Id.src.match("images/placeholder-image2.png")) {
+                Image_Id.src = "images/park.png";
+                document.querySelectorAll('.showImageRowTwo').forEach(x=>x.classList.toggle('hidden'));
             }
             else {
                 Image_Id.src = "images/placeholder-image2.png";
@@ -46,122 +270,225 @@ const replaceImageWithReading = document.querySelectorAll('.reading')
 
 // click on park to replace the 3rd placeholder image that was clicked with that picture and hide the other pictures
 
-const replaceImageWithPark = document.querySelectorAll('.park')
+const replaceImageWithParkRowThree = document.querySelectorAll('.parkRowThree')
 
-        Array.from(replaceImageWithPark).forEach(element => element.addEventListener('click', switchWithPark))
+        Array.from(replaceImageWithParkRowThree).forEach(element => element.addEventListener('click', switchWithParkRowThree))
 
-        function switchWithPark(click){
+        function switchWithParkRowThree(click){
             let Image_Id = document.getElementById('getImage3');
             if (Image_Id.src.match("images/placeholder-image3.png")) {
                 Image_Id.src = "images/park.png";
-              document.querySelectorAll('.showImage').forEach(x=>x.classList.toggle('hidden'));
+                document.querySelectorAll('.showImageRowThree').forEach(x=>x.classList.toggle('hidden'));
             }
             else {
                 Image_Id.src = "images/placeholder-image3.png";
             }
         }
 
-// click on speech therapy picture to replace the 4th placeholder image that was clicked with that picture and hide the other pictures
+// click on park to replace the 4th placeholder image that was clicked with that picture and hide the other pictures
 
-const replaceImageWithSpeechTherapy = document.querySelectorAll('.speechTherapy')
+const replaceImageWithParkRowFour = document.querySelectorAll('.parkRowFour')
 
-        Array.from(replaceImageWithSpeechTherapy).forEach(element => element.addEventListener('click', switchWithSpeechTherapy))
+        Array.from(replaceImageWithParkRowFour).forEach(element => element.addEventListener('click', switchWithParkRowFour))
 
-        function switchWithSpeechTherapy(click){
+        function switchWithParkRowFour(click){
             let Image_Id = document.getElementById('getImage4');
             if (Image_Id.src.match("images/placeholder-image4.png")) {
-                Image_Id.src = "images/speech therapy_3.png";
-              document.querySelectorAll('.showImage').forEach(x=>x.classList.toggle('hidden'));
+                Image_Id.src = "images/park.png";
+                document.querySelectorAll('.showImageRowFour').forEach(x=>x.classList.toggle('hidden'));
             }
             else {
                 Image_Id.src = "images/placeholder-image4.png";
             }
         }
 
-// click on lunch picture to replace the 5th placeholder image that was clicked with that picture and hide the other pictures
+// click on park to replace the 5th placeholder image that was clicked with that picture and hide the other pictures
 
-const replaceImageWithLunch = document.querySelectorAll('.lunch')
+const replaceImageWithParkRowFive = document.querySelectorAll('.parkRowFive')
 
-        Array.from(replaceImageWithLunch).forEach(element => element.addEventListener('click', switchWithLunch))
+        Array.from(replaceImageWithParkRowFive).forEach(element => element.addEventListener('click', switchWithParkRowFive))
 
-        function switchWithLunch(click){
+        function switchWithParkRowFive(click){
             let Image_Id = document.getElementById('getImage5');
             if (Image_Id.src.match("images/placeholder-image5.png")) {
-                Image_Id.src = "images/lunch.png.variant-medium.png";
-              document.querySelectorAll('.showImage').forEach(x=>x.classList.toggle('hidden'));
+                Image_Id.src = "images/park.png";
+                document.querySelectorAll('.showImageRowFive').forEach(x=>x.classList.toggle('hidden'));
             }
             else {
                 Image_Id.src = "images/placeholder-image5.png";
             }
         }
 
-// OLD CODE BELOW
+// --- SPEECH THERAPY PICTURE --
 
-// // select image element
-// const img = document.getElementById('show-image');
+// click on speech therapy to replace the 1st placeholder image that was clicked with that picture and hide the other pictures
 
-// // listen for the click event
+const replaceImageWithSpeechTherapyRowOne = document.querySelectorAll('.speechTherapyRowOne')
 
-// // toggle variable
+        Array.from(replaceImageWithSpeechTherapyRowOne).forEach(element => element.addEventListener('click', switchWithSpeechTherapyRowOne))
 
-// let toggle = true;
+        function switchWithSpeechTherapyRowOne(click){
+            let Image_Id = document.getElementById('getImage1');
+            if (Image_Id.src.match("images/placeholder-image1.png")) {
+                Image_Id.src = "images/speech therapy_3.png";
+                document.querySelectorAll('.showImageRowOne').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image1.png";
+            }
+        }
 
-// img.addEventListener('click', function(){
-//     // toggle
-//     toggle = !toggle;
-//     if(toggle){
-//         img.src = 'images/placeholder-image.png'
-//     }else{
-//         img.src = 'images/breakfast.png.variant-medium.png'
-//     }
+// click on speech therapy to replace the 2nd placeholder image that was clicked with that picture and hide the other pictures
 
-//     // img.src = 'images/breakfast.png.variant-medium.png'
-// })
+const replaceImageWithSpeechTherapyRowTwo = document.querySelectorAll('.speechTherapyRowTwo')
 
-// const images = document.querySelectorAll('.displayImages')
+        Array.from(replaceImageWithSpeechTherapyRowTwo).forEach(element => element.addEventListener('click', switchWithSpeechTherapyRowTwo))
 
-// Array.from(images).forEach(element => element.addEventListener('click', displayImage))
+        function switchWithSpeechTherapyRowTwo(click){
+            let Image_Id = document.getElementById('getImage2');
+            if (Image_Id.src.match("images/placeholder-image2.png")) {
+                Image_Id.src = "images/speech therapy_3.png";
+                document.querySelectorAll('.showImageRowTwo').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image2.png";
+            }
+        }
 
-// function displayImage(click){
-// 	if(click.target.classList.contains('pickImage')){
-// 		document.querySelector('#show-image').classList.toggle('hidden')
-// 	}else{
-// 		alert("Error: please refresh and try again.");
-// 	}
-// }
+// click on speech therapy to replace the 3rd placeholder image that was clicked with that picture and hide the other pictures
 
-// function switchImage() {
-//     let Image_Id = document.getElementById('getImage');
-//     if (Image_Id.src.match("images/placeholder-image.png")) {
-//         Image_Id.src = "images/breakfast.png.variant-medium.png";
-//     }
-//     else {
-//         Image_Id.src = "images/placeholder-image.png";
-//     }
-// }        
+const replaceImageWithSpeechTherapyRowThree = document.querySelectorAll('.speechTherapyRowThree')
 
-// const replaceImages = document.querySelectorAll('.replaceImage')
+        Array.from(replaceImageWithSpeechTherapyRowThree).forEach(element => element.addEventListener('click', switchWithSpeechTherapyRowThree))
 
-// Array.from(replaceImages).forEach(element => element.addEventListener('click', replaceImage))
+        function switchWithSpeechTherapyRowThree(click){
+            let Image_Id = document.getElementById('getImage3');
+            if (Image_Id.src.match("images/placeholder-image3.png")) {
+                Image_Id.src = "images/speech therapy_3.png";
+                document.querySelectorAll('.showImageRowThree').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image3.png";
+            }
+        }
 
-// function replaceImage(click){
-// 	if(click.target.classList.contains('switchImage')){
-// 		document.querySelector('#show-image')
-//         // classList.toggle('hidden')
-//         img.src = 'images/breakfast.png.variant-medium.png'
-// 	}else{
-// 		alert("Error: please refresh and try again.");
-// 	}
-// }
+// click on speech therapy to replace the 4th placeholder image that was clicked with that picture and hide the other pictures
 
-// const contestants = document.querySelectorAll('.contestant')
+const replaceImageWithSpeechTherapyRowFour = document.querySelectorAll('.speechTherapyRowFour')
 
-// Array.from(contestants).forEach(element => element.addEventListener('click', checkForRose))
+        Array.from(replaceImageWithSpeechTherapyRowFour).forEach(element => element.addEventListener('click', switchWithSpeechTherapyRowFour))
 
-// function checkForRose(click){
-// 	if(click.target.classList.contains('rose')){
-// 		document.querySelector('#nikki').classList.toggle('hidden')
-// 	}else{
-// 		alert("Wrong!");
-// 	}
-// }
+        function switchWithSpeechTherapyRowFour(click){
+            let Image_Id = document.getElementById('getImage4');
+            if (Image_Id.src.match("images/placeholder-image4.png")) {
+                Image_Id.src = "images/speech therapy_3.png";
+                document.querySelectorAll('.showImageRowFour').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image4.png";
+            }
+        }
+
+// click on speech therapy to replace the 5th placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithSpeechTherapyRowFive = document.querySelectorAll('.speechTherapyRowFive')
+
+        Array.from(replaceImageWithSpeechTherapyRowFive).forEach(element => element.addEventListener('click', switchWithSpeechTherapyRowFive))
+
+        function switchWithSpeechTherapyRowFive(click){
+            let Image_Id = document.getElementById('getImage5');
+            if (Image_Id.src.match("images/placeholder-image5.png")) {
+                Image_Id.src = "images/speech therapy_3.png";
+                document.querySelectorAll('.showImageRowFive').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image5.png";
+            }
+        }
+
+// --- LUNCH PICTURE --
+
+// click on lunch to replace the 1st placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithLunchRowOne = document.querySelectorAll('.lunchRowOne')
+
+        Array.from(replaceImageWithLunchRowOne).forEach(element => element.addEventListener('click', switchWithLunchRowOne))
+
+        function switchWithLunchRowOne(click){
+            let Image_Id = document.getElementById('getImage1');
+            if (Image_Id.src.match("images/placeholder-image1.png")) {
+                Image_Id.src = "images/lunch.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowOne').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image1.png";
+            }
+        }
+
+// click on lunch to replace the 2nd placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithLunchRowTwo = document.querySelectorAll('.lunchRowTwo')
+
+        Array.from(replaceImageWithLunchRowTwo).forEach(element => element.addEventListener('click', switchWithLunchRowTwo))
+
+        function switchWithLunchRowTwo(click){
+            let Image_Id = document.getElementById('getImage2');
+            if (Image_Id.src.match("images/placeholder-image2.png")) {
+                Image_Id.src = "images/lunch.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowTwo').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image2.png";
+            }
+        }
+
+// click on lunch to replace the 3rd placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithLunchRowThree = document.querySelectorAll('.lunchRowThree')
+
+        Array.from(replaceImageWithLunchRowThree).forEach(element => element.addEventListener('click', switchWithLunchRowThree))
+
+        function switchWithLunchRowThree(click){
+            let Image_Id = document.getElementById('getImage3');
+            if (Image_Id.src.match("images/placeholder-image3.png")) {
+                Image_Id.src = "images/lunch.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowThree').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image3.png";
+            }
+        }
+
+// click on lunch to replace the 4th placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithLunchRowFour = document.querySelectorAll('.lunchRowFour')
+
+        Array.from(replaceImageWithLunchRowFour).forEach(element => element.addEventListener('click', switchWithLunchRowFour))
+
+        function switchWithLunchRowFour(click){
+            let Image_Id = document.getElementById('getImage4');
+            if (Image_Id.src.match("images/placeholder-image4.png")) {
+                Image_Id.src = "images/lunch.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowFour').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image4.png";
+            }
+        }
+
+// click on lunch to replace the 5th placeholder image that was clicked with that picture and hide the other pictures
+
+const replaceImageWithLunchRowFive = document.querySelectorAll('.lunchRowFive')
+
+        Array.from(replaceImageWithLunchRowFive).forEach(element => element.addEventListener('click', switchWithLunchRowFive))
+
+        function switchWithLunchRowFive(click){
+            let Image_Id = document.getElementById('getImage5');
+            if (Image_Id.src.match("images/placeholder-image5.png")) {
+                Image_Id.src = "images/lunch.png.variant-medium.png";
+                document.querySelectorAll('.showImageRowFive').forEach(x=>x.classList.toggle('hidden'));
+            }
+            else {
+                Image_Id.src = "images/placeholder-image5.png";
+            }
+        }

@@ -8,57 +8,98 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <section class="welcomeSection">
+        <img class="stepAndPrepLogo" src="images/stepandpreplogo.png" alt="Step and Prep Logo">
+        <br>
+        Welcome to Prep and Step!
+    </section>
 <div id="main-container">
 <section id="schedule-container">
     <section class="image-container">
-        Activity 1
+        <span class="fontStyle">Activity 1</span>
         <br>
-        <img id="getImage1" class="pictures pickImage" id="change-image" src="images/placeholder-image1.png" alt="Placeholder Image that states 'Click here to select an image'">
+        <img id="getImage1" class="pictures pickImageRowOne" id="change-image" src="images/placeholder-image1.png" alt="Placeholder Image that states 'Click here to select an image'">
         <form action="/action_page.php">
             <input type="text" id="activity" style="text-align: center" name="activity" placeholder="Type in name of activity">
         </form>
     </section>
     <section class="image-container">
-        Activity 2
+        <span class="fontStyle">Activity 2</span>
         <br>
-        <img id="getImage2" class="pictures pickImage" id="change-image" src="images/placeholder-image2.png" alt="Placeholder Image that states 'Click here to select an image'">
+        <img id="getImage2" class="pictures pickImageRowTwo" id="change-image" src="images/placeholder-image2.png" alt="Placeholder Image that states 'Click here to select an image'">
         <form action="/action_page.php">
             <input type="text" id="activity" style="text-align: center" name="activity" placeholder="Type in name of activity">
         </section>
         <section class="image-container">
-            Activity 3
+            <span class="fontStyle">Activity 3</span>
             <br>
-            <img id="getImage3" class="pictures pickImage" id="change-image" src="images/placeholder-image3.png" alt="Placeholder Image that states 'Click here to select an image'">
+            <img id="getImage3" class="pictures pickImageRowThree" id="change-image" src="images/placeholder-image3.png" alt="Placeholder Image that states 'Click here to select an image'">
             <form action="/action_page.php">
                 <input type="text" id="activity" style="text-align: center" name="activity" placeholder="Type in name of activity">
             </form>
         </section>
         <section class="image-container">
-            Activity 4
+            <span class="fontStyle">Activity 4</span>
             <br>
-            <img id="getImage4" class="pictures pickImage" id="change-image" src="images/placeholder-image4.png" alt="Placeholder Image that states 'Click here to select an image'">
+            <img id="getImage4" class="pictures pickImageRowFour" id="change-image" src="images/placeholder-image4.png" alt="Placeholder Image that states 'Click here to select an image'">
             <form action="/action_page.php">
                 <input type="text" id="activity" style="text-align: center" name="activity" placeholder="Type in name of activity">
             </form>
         </section>
         <section class="image-container">
-            Activity 5
+            <span class="fontStyle">Activity 5</span>
             <br>
-            <img id="getImage5" class="pictures pickImage" id="change-image" src="images/placeholder-image5.png" alt="Placeholder Image that states 'Click here to select an image'">
+            <img id="getImage5" class="pictures pickImageRowFive" id="change-image" src="images/placeholder-image5.png" alt="Placeholder Image that states 'Click here to select an image'">
                 <input type="text" id="activity" style="text-align: center" name="activity" placeholder="Type in name of activity">
             </form>
         </section>
 </section>
 <section class="images-appear-here">
-    <img class="displayedPictures hidden showImage breakfast" src="images/breakfast.png.variant-medium.png" alt="breakfast picture">
-    <img class="displayedPictures hidden showImage reading" src="images/reading.png.variant-medium.png" alt="reading picture">
-    <img class="displayedPictures hidden showImage park" src="images/park.png" alt="park picture">
-    <img class="displayedPictures hidden showImage speechTherapy" src="images/speech therapy_3.png" alt="speech therapy picture">
-    <img class="displayedPictures hidden showImage lunch" src="images/lunch.png.variant-medium.png" alt="lunch picture">
+    <!-- Breakfast Picture -->
+    <img class="displayedPictures hidden showImageRowOne breakfastRowOne" src="images/breakfast.png.variant-medium.png" alt="breakfast picture">
+    <img class="displayedPictures hidden showImageRowTwo breakfastRowTwo" src="images/breakfast.png.variant-medium.png" alt="breakfast picture">
+    <img class="displayedPictures hidden showImageRowThree breakfastRowThree" src="images/breakfast.png.variant-medium.png" alt="breakfast picture">
+    <img class="displayedPictures hidden showImageRowFour breakfastRowFour" src="images/breakfast.png.variant-medium.png" alt="breakfast picture">
+    <img class="displayedPictures hidden showImageRowFive breakfastRowFive" src="images/breakfast.png.variant-medium.png" alt="breakfast picture">
+
+    <!-- Reading Picture -->
+    <img class="displayedPictures hidden showImageRowOne readingRowOne reading" src="images/reading.png.variant-medium.png" alt="reading picture">
+    <img class="displayedPictures hidden showImageRowTwo readingRowTwo reading" src="images/reading.png.variant-medium.png" alt="reading picture">
+    <img class="displayedPictures hidden showImageRowThree readingRowThree reading" src="images/reading.png.variant-medium.png" alt="reading picture">
+    <img class="displayedPictures hidden showImageRowFour readingRowFour reading" src="images/reading.png.variant-medium.png" alt="reading picture">
+    <img class="displayedPictures hidden showImageRowFive readingRowFive reading" src="images/reading.png.variant-medium.png" alt="reading picture">
+
+    <!-- Park Picture -->
+    <img class="displayedPictures hidden showImageRowOne parkRowOne park" src="images/park.png" alt="park picture">
+    <img class="displayedPictures hidden showImageRowTwo parkRowTwo park" src="images/park.png" alt="park picture">
+    <img class="displayedPictures hidden showImageRowThree parkRowThree park" src="images/park.png" alt="park picture">
+    <img class="displayedPictures hidden showImageRowFour parkRowFour park" src="images/park.png" alt="park picture">
+    <img class="displayedPictures hidden showImageRowFive parkRowFive park" src="images/park.png" alt="park picture">
+
+    <!-- Speech Therapy Picture -->
+    <img class="displayedPictures hidden showImageRowOne speechTherapyRowOne speechTherapy" src="images/speech therapy_3.png" alt="speech therapy picture">
+    <img class="displayedPictures hidden showImageRowTwo speechTherapyRowTwo speechTherapy" src="images/speech therapy_3.png" alt="speech therapy picture">
+    <img class="displayedPictures hidden showImageRowThree speechTherapyRowThree speechTherapy" src="images/speech therapy_3.png" alt="speech therapy picture">
+    <img class="displayedPictures hidden showImageRowFour speechTherapyRowFour speechTherapy" src="images/speech therapy_3.png" alt="speech therapy picture">
+    <img class="displayedPictures hidden showImageRowFive speechTherapyRowFive speechTherapy" src="images/speech therapy_3.png" alt="speech therapy picture">
+
+    <!-- Lunch Picture -->
+    <img class="displayedPictures hidden showImageRowOne lunchRowOne lunch" src="images/lunch.png.variant-medium.png" alt="lunch picture">
+    <img class="displayedPictures hidden showImageRowTwo lunchRowTwo lunch" src="images/lunch.png.variant-medium.png" alt="lunch picture">
+    <img class="displayedPictures hidden showImageRowThree lunchRowThree lunch" src="images/lunch.png.variant-medium.png" alt="lunch picture">
+    <img class="displayedPictures hidden showImageRowFour lunchRowFour lunch" src="images/lunch.png.variant-medium.png" alt="lunch picture">
+    <img class="displayedPictures hidden showImageRowFive lunchRowFive lunch" src="images/lunch.png.variant-medium.png" alt="lunch picture">
 </section>
 </div>
-<footer class="footer">
-    <span>Credits: <a href="https://www.opensymbols.org/" alt="Link to opensymbols.org">Open Symbols</a>
+<footer class="footer footerFontStyle">
+    <span>
+        Modified <a target="_blank" href="https://freeicons.io/mobile-user-interface/calendar-date-time-day-schedule-icon-452907#" alt="Link to Schedule Icon by Hilmy Abiyyu Asad">Schedule</a> icon by <a target="_blank" href="https://freeicons.io/profile/75801">Hilmy Abiyyu Asad</a>,
+    </span>
+    <span>
+    Modified <a target="_blank" href="https://icons8.com/icon/916/running" alt="Link to Running Icon by Icons8">Running</a> icon by <a target="_blank" href="https://icons8.com">Icons8</a>, &
+    </span>
+    <span>
+    Picture Symbols from <a href="https://www.opensymbols.org/" alt="Link to opensymbols.org">Open Symbols</a>
     </span>
 </footer>
 <script type="text/javascript" src="main.js"></script>
