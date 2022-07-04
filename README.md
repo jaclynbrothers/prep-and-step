@@ -1,7 +1,9 @@
-# Prep and Step Demo
+# Prep and Step Prototype
 This application allows the user to select and name images to create a visual schedule of their student's or child's daily routine. 
 
 **Link to project:** https://jaclynbrothers.github.io/prep-and-step/
+
+https://user-images.githubusercontent.com/102431119/177064708-7fa68044-e161-47ff-936d-b0e1b4b8bdc3.mp4
 
 ## How It's Made
 
