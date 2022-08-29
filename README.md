@@ -15,7 +15,6 @@ My learning is focused on making a simple application that is easy for the user 
 I will continue to improve the functionality and style of the project as it is still in development.  
 
 ## Lessons Learned
-
 I learned more about Flexbox to arrange my layout. 
 
 ## Credits
